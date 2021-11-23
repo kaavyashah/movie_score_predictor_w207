@@ -59,14 +59,10 @@ def getScripts(scripts):
         soup = BeautifulSoup(page.content, "html.parser")
         script = soup.find('pre')
 
-        all_scripts.append(script)
-
-    for i, play in enumerate(all_scripts):
-        if play is None:
-            all_scripts.pop(i)
-        else:
-            all_scripts[i] = (play.text.strip())
+        if script is not None:
+            all_scripts.append(script.text.strip())
 
     return all_scripts
 
-print(getScripts(getScriptLinks()))
+train_data = getScripts(getScriptLinks())
+print(train_data[0])
