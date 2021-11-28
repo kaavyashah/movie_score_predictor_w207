@@ -48,9 +48,7 @@ def getScriptLinks():
 
 
 def getScripts(scripts):
-    """Put all the scripts into a list
-    Getting this error: RecursionError: maximum recursion depth exceeded
-    help??"""
+    """Put all the scripts into a list"""
     all_scripts = []
     for i in range(len(scripts)):
         URL = scripts[i]
