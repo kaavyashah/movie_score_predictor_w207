@@ -19,7 +19,7 @@ def getLinks(url, pattern):
 
 def getMoviePages():
     """Edit the getMovies list of URLS to be in a form we can "click" on"""
-    genreURL = "https://imsdb.com/genre/Sci-Fi"   # <===== change this to scrape different genres
+    genreURL = "https://imsdb.com/genre/Film-Noir"   # <===== change this to scrape different genres
     pattern = "^/Movie Scripts/"
     moviepages = []
     for i, url in enumerate(getLinks(genreURL, pattern)):
@@ -47,9 +47,24 @@ def getScriptLinks():
     return script_links
 
 
+# def getScripts(scripts):
+#     """Put all the scripts into a list"""
+#     all_scripts = []
+#     for i in range(len(scripts)):
+#         URL = scripts[i]
+#         page = requests.get(URL)
+#
+#         soup = BeautifulSoup(page.content, "html.parser")
+#         script = soup.find('pre')
+#
+#         if script is not None:
+#             all_scripts.append(script.text.strip())
+#
+#     return all_scripts
+
 def getScripts(scripts):
     """Put all the scripts into a list"""
-    all_scripts = []
+    f = open("scripts.txt", "a")
     for i in range(len(scripts)):
         URL = scripts[i]
         page = requests.get(URL)
@@ -58,9 +73,10 @@ def getScripts(scripts):
         script = soup.find('pre')
 
         if script is not None:
-            all_scripts.append(script.text.strip())
+            f.write(script.text.strip())
 
-    return all_scripts
+    f.close()
 
-train_data = getScripts(getScriptLinks())
-print(train_data[0])
+    return f
+
+getScripts(getScriptLinks())
