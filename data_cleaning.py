@@ -14,6 +14,13 @@ movies['language'] = movies['spoken_languages'].apply(unnest)
 movies['companies'] = movies['production_companies'].apply(unnest)
 movies['countries'] = movies['production_countries'].apply(unnest)
 
+# deal with string list issue
+movies['genre'] = [ast.literal_eval(x) for x in list(movies['genre'])]
+movies['keyword'] = [ast.literal_eval(x) for x in list(movies['keyword'])]
+movies['language'] = [ast.literal_eval(x) for x in list(movies['language'])]
+movies['companies'] = [ast.literal_eval(x) for x in list(movies['companies'])]
+movies['countries'] = [ast.literal_eval(x) for x in list(movies['countries'])]
+
 # date and time values
 movies['release_date'] = pd.to_datetime(movies['release_date'])
 movies["year"] = pd.DatetimeIndex(movies["release_date"]).year
