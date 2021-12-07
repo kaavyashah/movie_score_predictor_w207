@@ -1,6 +1,3 @@
-# w207-final
-
-
 # What Makes a MOVIE? 🎥 
   
 ## Repository Structure
