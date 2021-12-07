@@ -20,5 +20,6 @@
   
 - [scripts.txt](scripts.txt) - Text file with scraped script text
 
-  
-  Contributors: Elías Saravia, Jenna Morabito, Joyce Li, Kaavya Shah, Kseniya Usovich
+
+### Contributors
+Elías Saravia, Jenna Morabito, Joyce Li, Kaavya Shah, Kseniya Usovich
