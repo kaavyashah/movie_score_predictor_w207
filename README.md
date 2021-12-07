@@ -8,7 +8,7 @@
 
 - [KNN_clustering.ipynb](KNN_clustering.ipynb) - IPython Notebook with code for k-NN Clustering
 
-- [Machine Learning Modeling.ipynb](Machine Learning Modeling.ipynb) - IPython Notebook with code for modeling for this project
+- [Machine Learning Modeling.ipynb](https://github.com/kaavyashah/w207-final/blob/5b1362c4888d9ce66e0facf4ee638cd5e78c9b3c/Machine%20Learning%20Modeling.ipynb) - IPython Notebook with code for modeling for this project
 
 - [data_cleaning.py](data_cleaning.py) - Python file to do initial cleaning on TMDB dataset. Writes cleaned file into the data folder
 
