@@ -1,7 +1,7 @@
 # w207-final
 
 
-<h1 align="center"><What Makes a MOVIE? 🎥 ></h1>
+# What Makes a MOVIE? 🎥 
   
 ## Repository Structure
 - [data](data) - Includes cleaned data files used in the project.
