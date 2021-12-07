@@ -19,3 +19,6 @@
 - [scrape_scripts.py](scrape_scripts.py) - Python file to scrape movie scripts
   
 - [scripts.txt](scripts.txt) - Text file with scraped script text
+
+  
+  Contributors: Elías Saravia, Jenna Morabito, Joyce Li, Kaavya Shah, Kseniya Usovich
